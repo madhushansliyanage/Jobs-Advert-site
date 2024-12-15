@@ -1,0 +1,158 @@
+<html>
+	<head>
+		<title>Apply</title>
+		<meta name="keywords" content="jobs,online jobs,part time jobs,full time jobs,goverment jobs,private jobs" />
+		<meta name="description" content="Finding Jobs" />
+		<link href="Style.css" type="text/css" rel="stylesheet" />
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="Javascript.js"></script>
+		<style>
+			body{
+				background-repeat: no-repeat;
+			}
+			.applyform{
+				background: linear-gradient(to top,rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+				margin-top: 50px;
+				height: 500px;
+				width: 800px;
+				margin-left: 275px;
+				border-radius: 10px;
+				color: #fff;
+				border: 1px solid #ff7200;
+			}
+			.applyform h1{
+				text-align: center;
+			}
+			.applyform input{
+				height: 30px;
+				border-radius: 5px;
+				padding: 5px;
+			}
+			
+			.personal{
+				padding-top: 20px;
+				padding-left: 20px;
+			}
+			#inpad{
+				padding: 5px;
+			}
+			.TN{
+				position: absolute;
+			}
+			.NI{
+				margin-left: 100px;
+			}
+			.contact{
+				padding-left: 20px;
+			}
+			.subBtn{
+				padding-left: 20px;
+				padding-bottom: 20px;
+			}
+			.upSec{
+				padding-left: 20px;
+			}
+			.NI input{
+				width: 300px;
+			}
+			.NF input{
+				width: 750px;
+			}
+			.Gender{
+				display: inline;
+			}
+			#up:hover{
+				background:orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nvbar">
+			<div class="I1">
+				<img src="Resource/fyclogo.png" id="indIMG">
+				<h1 class="logo"> JOBs </h1>
+			</div>
+			<div class="I2">
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="signup.html">Register</a></li>
+					<li><a href="#" id="cat">Catagery</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+			</div>
+			<div class="srchBar">
+				<div id="srchBox">
+					<input type="search" placeholder="type here category" id="srchInput">
+				</div>
+				<div>
+					<input type="button" value="Search" id="srchBtn">
+				</div>
+			</div>
+		</div>
+		<div class="dropdownmenu" style="margin-top: -20px;">
+			<a href="Personal and Community Development Jobs .html"><button id="btndrop">Personal and Community development</button></a><br>
+			<a href="Text tile & garment.html"><button id="btndrop">Testile and garment</button></a><br>
+			<a href="agriculture.html"><button id="btndrop">Agriculture</button></a><br>
+			<a href="Hospitality and tourism.html"><button id="btndrop">Hospitality and tourism</button></a><br>
+			<a href="Security.html"><button id="btndrop">Security</button></a><br>
+			<a href="Business.html"><button id="btndrop">Business</button><a/><br>
+			<a href="Building construction.html"><button id="btndrop">Building Construction</button></a><br>
+			<a href="Health.html"><button id="btndrop">health</button></a>
+		</div>
+		<div class="applyform">
+			<div class="aT">
+				<h1>Apply Now</h1>
+			</div>
+			<form name="apply">
+				<div class="personal">	
+					<div class="TN" id="inpad">
+						<label>Title : </label><select>
+									<option>Mr</option>
+									<option>Mrs</option>
+									<option>Miss</option>
+								</select>
+					</div>
+					<div class="NI" id="inpad">
+						<input type="text" placeholder="Name with Initials" name="ni" pattern="[a-zA-Z ]{1,50}" title="Enter letters only" required>
+					</div>
+					<div class="NF" id="inpad">
+						<input type="text" placeholder="Name in Full" pattern="[a-zA-Z ]{1,100}" title="Enter letters only" name="nf" required>
+					</div>
+					<div class="DOB" id="inpad">
+						<label>Date of Birth : </label><input type="date" name="dob" required>
+					</div>
+					<div class="AGE" id="inpad">
+						<label>Age : </label><input type="text" placeholder="AGE" name="age" pattern="[0-9]{1,2}" title="please enter valid age" required>
+					</div>
+					<div class="Gender" id="inpad">
+						<label>Gender : </label>
+						<label>Male</label><input type="radio" name="gender" value="Male"> &nbsp;
+						<label>Female</label><input type="radio" name="gender" value="Female">
+					</div>
+					<div class="PN" id="inpad">
+						<input type="text" placeholder="Passport Number" name="pn" pattern="[0-9]{1,12}" maxlength="12" minlength="12" title="please enter valid number" required>
+					</div>
+					<div class="CIT" id="inpad">
+						<input type="text" placeholder="Citizenship" name="cit" pattern="[a-zA-Z ]{1,20}" title="Enter letters only" required>
+					</div>
+				</div>
+				<div class="contact" >
+					<div class="phone" id="inpad">
+						<label>Contact Number : </label>&nbsp;&nbsp;<label>Mobile : </label><input type="text" name="mp" maxlength="10" minlength="10" pattern="[0-9]{1,12}" title="Enter numbers only" required>&nbsp;&nbsp;<label>Home : </label><input type="text" name="hp" maxlength="10" pattern="[0-9]{1,12}"  title="Enter numbers only">
+					</div>
+					<div class="EM" id="inpad">
+						<label>Email : </label>&nbsp;&nbsp;<input type="email" placeholder="abc123@gmail.com" name="emi" required>
+					</div>
+					<div class="ADDS" id="inpad">
+						<label>Address : </label>&nbsp;&nbsp;<input type="text" placeholder="address line 01" name="l1" pattern="[a-zA-Z ]{1,20}" title="Enter letters only" required>&nbsp;&nbsp;<input type="text" placeholder="address line 02" name="l2" pattern="[a-zA-Z ]{1,20}" title="Enter letters only">&nbsp;&nbsp;<input type="text" placeholder="address line 03" pattern="[a-zA-Z ]{1,20}" title="Enter letters only">
+					</div>
+				</div>
+				<div class="subBtn" >
+					<label>Upload your CV : </label><input type="file" id="up"><input type="submit" value="Submit" id="up">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear" id="up" required>
+				</div>
+			</form>
+		</div>
+		
+	</body>
+</html>

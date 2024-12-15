@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>JOBs</title>
+		<meta name="keywords" content="jobs,online jobs,part time jobs,full time jobs,goverment jobs,private jobs" />
+		<meta name="description" content="Finding Jobs" />
+		<link href="Style.css" type="text/css" rel="stylesheet" />
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="Javascript.js"></script>
+		<style>
+			body{
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nvbar">
+			<div class="I1">
+				<img src="Resource/fyclogo.png" id="indIMG">
+				<h1 class="logo"> JOBs </h1>
+			</div>
+			<div class="I2">
+				<ul>
+					<li><a href="index.html" id="active">Home</a></li>
+					<li><a href="signup.html">Register</a></li>
+					<li><a href="#" id="cat">Catagery</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+			</div>
+			<div class="srchBar">
+				<div id="srchBox">
+					<input type="search" placeholder="type here category" id="srchInput">
+				</div>
+				<div>
+					<input type="button" value="Search" id="srchBtn">
+				</div>
+			</div>
+		</div>
+		<div class="dropdownmenu">
+			<a href="Personal and Community Development Jobs .html"><button id="btndrop">Personal and Community development</button></a><br>
+			<a href="Text tile & garment.html"><button id="btndrop">Testile and garment</button></a><br>
+			<a href="agriculture.html"><button id="btndrop">Agriculture</button></a><br>
+			<a href="Hospitality and tourism.html"><button id="btndrop">Hospitality and tourism</button></a><br>
+			<a href="Security.html"><button id="btndrop">Security</button></a><br>
+			<a href="Business.html"><button id="btndrop">Business</button><a/><br>
+			<a href="Building construction.html"><button id="btndrop">Building Construction</button></a><br>
+			<a href="Health.html"><button id="btndrop">health</button></a>
+		</div>
+		<div class="content">
+			<div class="topic">
+				<h1>Find Your <br> Career</h1>
+			</div>
+			<div class="log">
+				<form method="post">
+					<h2>Login Here</h2>
+					<input type="text" name="uname" placeholder="Enter your username" id="logUname" required>
+					<input type="password" name="pw" placeholder="Enter your password" id="logPassword" required>
+					<button class="btnLog" onclick="logCheck()">Login</button>
+				</form>
+				<p class="signup">Don't have an account?<br>
+				<a href="signup.html">Sign up here</a></p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+			
+body{
+	background-image:linear-gradient(to top,rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%),url("Resource/index.jpg");
+	background-size: cover;
+}
+		
+.nvbar{
+	width: 100%;
+	height: 40px;
+	margin: auto;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background:linear-gradient(to top,rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+}
+			
+.logo{
+	cursor: pointer;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 15px;
+}
+			
+.nvbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position:relative;
+}
+			
+.nvbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.4s ease-in-out;
+}
+			
+.nvbar ul li::after{
+	content:'';
+	height: 3px;
+	width: 0;
+	background: orange;
+	position: absolute;
+	left: 0;
+	bottom: -10;
+	transition: 0.5s;
+}
+			
+.nvbar ul li:hover:after{
+	width: 100%;
+}
+			
+ul li a:hover{
+	color: orange;
+}
+			
+#indIMG{
+	width: 50px;
+	height: 50px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+			
+.srchBar{
+	display:flex;
+	justify-content: center;
+}
+			
+#srchBox{
+	font-weight: bold;
+	border: none;
+	display: none;
+}
+			
+#srchInput{
+	display:none;
+	width:180px;
+	height: 40px;
+	border: 1px solid orange;
+	background:transparent;
+	color: white;
+	font-weight: bold;
+	padding-left: 5px;
+}
+			
+#srchBtn{
+	height: 40px;
+	width: 100px;
+	font-weight: bold;
+	border: 1px solid orange;
+	background:transparent;
+	color:white;
+}
+			
+.I1{
+	display: flex;
+}
+			
+#srchBtn:hover{
+	background: orange;
+}
+			
+.content{
+	justify-content: space-between;
+}
+			
+.topic{
+	width: 40%;
+	position: fixed;
+	top: 40%;
+	color: #ff7200;
+	text-shadow: 3px -3px white;
+	font-size: 35px;
+	margin-left: 100px;
+}
+			
+.log{
+	position:absolute;
+	background:linear-gradient(to top,rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+	width: 250px;
+	height: 300px;
+	margin-left:900px;
+	border-radius:10px;
+	top: 25%;
+	padding:20px;
+}
+			
+.log h2{
+	width: 220px;
+	text-align:center;
+	color:#ff7200;
+	font-size: 22px;
+	background-color: white;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 8px;
+}
+			
+.log input{
+	width: 250px;
+	height: 35px;
+	background: transparent;
+	border-bottom: 1px solid Orange;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	color: white;
+	font-size: 15px;
+	margin-top: 30px;
+}
+			
+.btnLog{
+	width: 240px;
+	height: 40px;
+	background: orange;
+	border: none;
+	margin-top: 30px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: black;
+}
+			
+.btnLog:hover{
+	background: white;
+}
+			
+#loglbl{
+	background:orange;
+	border-radius:10px;
+	padding:10px;
+	margin:10px;
+}
+			
+.log p{
+	color:white;
+	margin-top: 8px;
+	text-align:center;
+}
+			
+.log a{
+	text-decoration: none;
+	color:orange;
+}
+
+.form{
+	position:fixed;
+	margin-top:100px;
+	margin-left:460px;
+	width:450px;
+	height:425px;
+	background:linear-gradient(to top,rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+	border-radius:10px;
+	color:white;
+}
+
+.reg{
+	color: white;
+	background:transparent;
+	width:400px;
+	height:40px;
+	padding-top: 10px;
+}
+
+.form td{
+	padding:10px;
+}
+
+.flname{
+	height:40px;
+	width:190px;
+	padding-left:5px;
+	border-radius:5px;
+	font-size:15px;
+}
+
+.ep{
+	height:40px;
+	width:400px;
+	padding-left:5px;
+	border-radius:5px;
+	font-size:15px;
+}
+
+#terms{
+	text-decoration:none;
+	color:green;
+}
+
+#active{
+	color: orange;
+}
+
+.I2{
+	position: absolute;
+	margin-left: 400px;
+}
+
+.dropdownmenu{
+	position: fixed;
+	margin-left: 610px;
+	color:white;
+	display: none;
+	margin-top:-20px;
+}
+
+.dropdownmenu button{
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+#btndrop:hover{
+	background: orange;
+}
+
+.dropdownmenu a{
+	text-decoration: none;
+	color:black;
+}

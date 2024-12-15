@@ -1,0 +1,159 @@
+<html>
+	<head>
+		<title>Create New Account</title>
+		<link href="Style.css" type="text/css" rel="stylesheet" />
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="Javascript.js" type="text/javascript"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<style>
+			body{
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nvbar">
+			<div class="I1">
+				<img src="Resource/fyclogo.png" id="indIMG">
+				<h1 class="logo"> JOBs </h1>
+			</div>
+			<div class="I2">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="signup.html" id="active">Register</a></li>
+					<li><a href="#" id="cat">Catagery</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+			</div>
+			<div class="srchBar">
+				<div id="srchBox">
+					<input type="search" placeholder="type here category" id="srchInput">
+				</div>
+				<div>
+					<input type="button" value="Search" id="srchBtn">
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="form" name="regform">
+				<form action="#" name="myform">
+					<center>
+						<div class="reg">
+							<h1>Register</h1>
+						</div>
+						<table>
+							<tr>
+								<td><input type="text" id="fname" placeholder="First Name" class="flname" onblur="checkLetterf()" required></td>
+								<td><input type="text" id="lname" placeholder="Last Name" class="flname" onblur="checkLetterl()" required></td>
+							</tr>
+							<tr>
+								<td colspan="2"><input type="text" placeholder="Email" class="ep" id="eMail" required></td>
+							</tr>
+							<tr>
+								<td colspan="2"><input type="password" placeholder="Password" class="ep" id="pass1" required></td>
+							</tr>
+							<tr>
+								<td colspan="2"><input type="password" placeholder="Confirm Password" class="ep" id="pass2" required></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="color:white"><input type="checkbox" name="checkbox" required>&nbsp;&nbsp;I accept the <a href="#" id="terms">Terms of use</a> & <a href="#" id="terms">Privacy Policy.</a></td>
+							</tr>
+							<tr>
+								<td colspan="2"><input type="button" value="Register" class="ep" style="background:orange;font-weight:bold" onclick="checkEmpty();passwordVal();"></td>
+							</tr>
+						</table>
+					</center>
+				</form>
+			</div>
+		</div>
+		<div class="dropdownmenu">
+			<a href="Personal and Community Development Jobs .html"><button id="btndrop">Personal and Community development</button></a><br>
+			<a href="Text tile & garment.html"><button id="btndrop">Testile and garment</button></a><br>
+			<a href="agriculture.html"><button id="btndrop">Agriculture</button></a><br>
+			<a href="Hospitality and tourism.html"><button id="btndrop">Hospitality and tourism</button></a><br>
+			<a href="Security.html"><button id="btndrop">Security</button></a><br>
+			<a href="Business.html"><button id="btndrop">Business</button><a/><br>
+			<a href="Building construction.html"><button id="btndrop">Building Construction</button></a><br>
+			<a href="Health.html"><button id="btndrop">health</button></a>
+		</div>
+		<script>
+			function checkEmpty(){
+				var fname = document.getElementById("fname").value;
+				var lname = document.getElementById("lname").value;
+				var eMail = document.getElementById("eMail").value;
+				var pass1 = document.getElementById("pass1").value;
+				var pass2 = document.getElementById("pass2").value;
+				
+				if(fname == ""){
+					alert("Fill the First Name Field!");
+				}
+				else if(lname == ""){
+					alert("Fill the Last Name Field!");
+				}
+				else if(eMail == ""){
+					alert("Fill the Email Field!");
+				}
+				else if(pass1 == ""){
+					alert("Fill the Password Field!");
+				}
+				else if(pass2 == ""){
+					alert("Fill the Confirm Password Field!");
+				}
+				else{
+					swal({
+						icon: "success",
+						title: "SUCCESS",
+						text: "Congratulations your account has been successfully created.",
+						type: "success"
+					}).then(function() 
+					{
+						window.location="index.html";
+					});
+					return false;
+				}
+			}
+			
+			function passwordVal(){
+				
+				var pass1 = document.getElementById("pass1").value;
+				var pass2 = document.getElementById("pass2").value;
+				
+				if(pass1 != pass2){
+					alert("Password are not matching !");
+					document.myform.pass2.focus();
+					document.myform.pass2.select();
+					return false;
+				}
+				
+			}
+			
+			function checkLetterf(){
+				var fname = document.getElementById("fname").value;
+				var letters = /^[A-Za-z]+$/;
+				
+				if(fname.match(letters)){
+					return true;
+				}
+				else{
+					confirm("Please Enter Letters only!");
+					return false;
+				}
+			}
+			
+			function checkLetterl(){
+				var lname = document.getElementById("lname").value;
+				var letters = /^[A-Za-z]+$/;
+				
+				if(lname.match(letters)){
+					return true;
+				}
+				else{
+					confirm("Please Enter Letters only!");
+					return false;
+				}
+			}
+			
+		</script>
+	</body>
+</html>
